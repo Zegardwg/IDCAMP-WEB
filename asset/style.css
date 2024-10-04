@@ -163,45 +163,66 @@ span {
   transition: 0.3 ease-in-out;
 }
 
-/* Resposive */
+/* Responisve Desktop View */
+@media (max-width: 1024px) {
+  .navbar a {
+    font-size: 1.6rem;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .portofolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Ubah grid menjadi 2 kolom */
+  }
+}
+
+/* Responsive Tablet View */
 @media (max-width: 768px) {
   .header {
     padding: 1rem 5%;
   }
-  .navbar {
-    font-size: 1.5rem;
-    margin-left: 5rem;
+
+  .home-content h1 {
+    font-size: 2.8rem;
   }
-  .home {
-    padding: 5rem 5% 5rem;
+
+  .portofolio-grid {
+    grid-template-columns: 1fr; /* Ubah grid menjadi 1 kolom */
   }
-  .home-content {
-    font-size: 1.2rem;
-  }
+
   .home-img {
     width: 200px;
     height: 50px;
   }
 }
 
-/* Responsive */
+/* Responsive Mobile View */
 @media (max-width: 480px) {
   .header {
     padding: 1rem 2%;
   }
+
   .navbar {
     font-size: 1.2rem;
-    margin-left: 2rem;
   }
-  .home {
-    padding: 3rem 2% 3rem;
+
+  .home-content h1 {
+    font-size: 2rem;
   }
-  .home-content {
-    font-size: 1rem;
-  }
+
   .home-img {
     width: 150px;
     height: 30px;
+  }
+
+  .portofolio-item img {
+    height: 100px; /* Perkecil gambar portofolio di mobile */
+  }
+
+  .sertifikasi img {
+    height: 200px; /* Sesuaikan ukuran gambar sertifikat di mobile */
   }
 }
 
