@@ -28,6 +28,7 @@ html {
 
 .header {
   position: fixed;
+  color: var(--text-color);
   top: 0;
   left: 0;
   width: 100%;
@@ -52,7 +53,7 @@ html {
 }
 .navbar {
   font-size: 1.8rem;
-  color: #fcf5f5;
+  color: var(--text-color);
   margin-left: 5rem;
   font-weight: 300;
   transition: 0.3s ease-in-out;
@@ -112,13 +113,12 @@ span {
   gap: 1rem;
   margin: 0 auto;
   max-width: 1000px;
-  height: 100vh;
 }
 .home-img {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; /* Menempatkan gambar di tengah */
+  margin: 0 auto;
   width: 250px;
   height: 75px;
   border-radius: 0;
@@ -147,13 +147,8 @@ span {
   transition: 0.3 ease-in-out;
 }
 .home-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center; /* Menempatkan teks di tengah */
-  margin-top: 3rem;
-  max-width: 1000px;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .btn {
   display: inline-block;
@@ -165,71 +160,48 @@ span {
   border: 2px solid transparent;
   letter-spacing: 0.1rem;
   font-weight: 600;
-  transition: 0.3s ease-in-out;
-  text-align: center; /* Menempatkan teks tombol di tengah */
-  margin: 0 auto;
+  transition: 0.3 ease-in-out;
 }
 
-/* Responisve Desktop View */
-@media (max-width: 1024px) {
-  .navbar a {
-    font-size: 1.6rem;
-  }
-
-  .home-content h1 {
-    font-size: 3rem;
-  }
-
-  .portofolio-grid {
-    grid-template-columns: repeat(2, 1fr); /* Ubah grid menjadi 2 kolom */
-  }
-}
-
-/* Responsive Tablet View */
+/* Resposive */
 @media (max-width: 768px) {
   .header {
     padding: 1rem 5%;
   }
-
-  .home-content h1 {
-    font-size: 2.8rem;
+  .navbar {
+    font-size: 1.5rem;
+    margin-left: 5rem;
   }
-
-  .portofolio-grid {
-    grid-template-columns: 1fr; /* Ubah grid menjadi 1 kolom */
+  .home {
+    padding: 5rem 5% 5rem;
   }
-
+  .home-content {
+    font-size: 1.2rem;
+  }
   .home-img {
     width: 200px;
     height: 50px;
   }
 }
 
-/* Responsive Mobile View */
+/* Responsive */
 @media (max-width: 480px) {
   .header {
     padding: 1rem 2%;
   }
-
   .navbar {
     font-size: 1.2rem;
+    margin-left: 2rem;
   }
-
-  .home-content h1 {
-    font-size: 2rem;
+  .home {
+    padding: 3rem 2% 3rem;
   }
-
+  .home-content {
+    font-size: 1rem;
+  }
   .home-img {
     width: 150px;
     height: 30px;
-  }
-
-  .portofolio-item img {
-    height: 100px; /* Perkecil gambar portofolio di mobile */
-  }
-
-  .sertifikasi img {
-    height: 200px; /* Sesuaikan ukuran gambar sertifikat di mobile */
   }
 }
 
