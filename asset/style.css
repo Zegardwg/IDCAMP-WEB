@@ -112,12 +112,13 @@ span {
   gap: 1rem;
   margin: 0 auto;
   max-width: 1000px;
+  height: 100vh;
 }
 .home-img {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto; /* Menempatkan gambar di tengah */
   width: 250px;
   height: 75px;
   border-radius: 0;
@@ -146,8 +147,12 @@ span {
   transition: 0.3 ease-in-out;
 }
 .home-content {
-  font-size: 1.5rem;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; /* Menempatkan teks di tengah */
+  margin-top: 3rem;
   max-width: 1000px;
 }
 .btn {
@@ -160,7 +165,9 @@ span {
   border: 2px solid transparent;
   letter-spacing: 0.1rem;
   font-weight: 600;
-  transition: 0.3 ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-align: center; /* Menempatkan teks tombol di tengah */
+  margin: 0 auto;
 }
 
 /* Responisve Desktop View */
